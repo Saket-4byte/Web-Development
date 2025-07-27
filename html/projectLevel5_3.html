@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me form</title>
+</head>
+<body>
+    <form action="contact.Saket" method="post">
+        <pre><b>         Fill the Form   </b></pre> <br>
+        <label for="name">Name : </label>
+        <input type="text" id="name" placeholder="Name" required = true> 
+        <br>
+        <label for="email">Email address : </label>
+        <input type="text" id="email" placeholder="Email" required = true>
+        <br>
+        <label for="age">Age : </label>
+        <input type="text" id="age" placeholder="Age" required = true>
+        <br>
+        <label for="contact number">Contact Number:</label>
+        <input type="number" id="contact number"> <br>
+        <label for="father name">Father Name:</label>
+        <input type="text" id="father name" placeholder="father name" required="true"> <br>
+        <label for="mother name">Mother Name:</label>
+        <input type="text" id="mother name" placeholder="mother name" required="true"> <br>
+        <label for="siblings">You have siblings:</label> <br>
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="yes" value="yes">
+        <label for="NO">NO:</label>
+        <input type="radio" id="NO" name="NO" value="NO">
+        <br>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female : </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other : </label>
+        <input type="radio" id="other" name="gender" value="other">
+        <br>
+        Date : <input type="date" value="date"> <br>
+        Favourite Colour : <input type="color"> <br>
+        Add File : <input type="file"> <br>
+        <b>Choose Language : </b> <br>
+        <label for="C">C:</label>
+        <input type="checkbox" id="C" name="Language" value="C"> <br>
+        <label for="Java">Java:</label>
+        <input type="checkbox" id="Java" name="Language" value="Java"> <br>
+        <label for="html">html:</label>
+        <input type="checkbox" id="html" name="Language" value="html"> <br>
+        <label for="country">Select your country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="USA">USA</option>
+            <option value="Russia">Russia</option>
+            <option value="SouthKorea">SouthKorea</option>
+            <option value="China">China</option>
+        </select>
+        <br>
+        <b>Add about your Self:</b> <br>
+        <textarea name="yourself" id="yourself" cols="20" rows="20"> Write Here</textarea> 
+        <br>
+        <label for="verification">I hereby confirm that I have reviewed the form I filled and verified all the provided information. I confirm that the form is correct, complete, and relevant to the purpose intended.</label>
+        <input type="checkbox" id="verification" name="verification" value="verification"> <br>
+        Submit : <input type="submit"> <br>
+    </form>
+</body>
+</html>

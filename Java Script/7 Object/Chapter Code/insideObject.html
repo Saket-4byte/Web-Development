@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let product = {
+      company: 'Mango',
+      price: 861,
+      'item-name': 'T-shirt',
+      // ye ek annoymous function hai yani yha pe hum function ka naam nhi derhe hai kyuki javascript samajh rha hai ki hum function ko directly displayPrice ke aandar assign karhe hai to naam hum function ke andar nhi LHS side pe derhe hai
+      displayPrice: function(){
+        // console.log(`Price of the product is ₹${product.price}`);
+
+        // or
+
+        console.log(`Price of the product is ₹${this.price}`);
+        // this ka matlab hai ki jo current object ke andar price defined hai usko dedo
+      }
+    };
+
+    product.displayPrice();
+    // console.log() iska matlab ye hai ki console mera object hai uske andar mera ek method hai log ,jisko mai call karrha hu
+    // Math.random() Math ek object hai jiske andar ye Method random defined hai isiliye hum . lagakar isse access karrha hai
+  </script>
+</body>
+</html>

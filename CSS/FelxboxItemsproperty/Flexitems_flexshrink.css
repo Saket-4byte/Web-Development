@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    margin: 5px;
+}
+#heading{text-align: center;}
+#container{
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+}
+#box1{background-color: aqua;}
+#box2{
+    background-color: blueviolet;
+    flex-shrink: 0;
+    /* box shrink hojayega ye number ke hisab se set hote hai
+    1->normal jitna sare box hai utna hi rahega 
+    2->double chota hoga baki sab order se
+    eg->baki sab 2% hai to ye 4% hoga
+    4->baki sab se ye 4guna chota hoga
+    0->0 dena se box2 chota nhi hoga baki sab chota hoga*/
+}
+#box3{background-color: yellow;}
+#box4{background-color: tomato;}

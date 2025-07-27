@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative unit:percentage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #first{
+            height: 100px;
+            width: 200px;
+            background-color: red;
+        }
+        #second{
+            height: 60%;/*yani ye aab parent ke height 60% lega */
+            width: 50%;/*yani ye parent ka 50% width lega*/
+            background-color: blueviolet;
+        }
+        /* second ko koi humne height and width nhi de to ye parent(first div) ki height and width le rha hai jo parent ki width hogi wahi iski hogi kyuki ye block element hai ek hi div ke andar dusra div hai */
+    </style>
+</head>
+<body>
+    <div id="first">First div
+        <div id="second">
+            second div
+        </div>
+    </div>
+</body>
+</html>

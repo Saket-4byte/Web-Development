@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Variables</title>
+</head>
+<body>
+  <script>
+    let welcomeMessage = 'Hello Friends';
+    console.log('hello friends');
+    console.log(welcomeMessage);
+    let bagPrice = (15599-(10/100*15599))-272;
+    let jeansPrice = (2499-(41/100*2499))-29;
+    let bagValue = Math.round((jeansPrice + bagPrice+25+20)*118/100);
+    let bagSummary = `Your final Myntra Bag amount is ₹${bagValue}`;
+    console.log(bagSummary);
+    // another example
+    let a = 2;
+    let b= 3;
+    console.log(a*b);
+    // Method 1↓
+    console.log(`the value is ${a*b}`);
+    // Method 2↓
+    console.log('The value is',a*b);
+  </script>
+</body>
+</html>

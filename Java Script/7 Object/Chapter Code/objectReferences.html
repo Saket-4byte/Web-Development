@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let a = 5;
+    let b =a; //yani yha pe humne jaise hi a ki value ko b me dala to ab a ka koi sambandh nhi hai b se ,yani ye puri tarike se copy hogyi 
+    console.log(`a=${a}, b=${b}`);//output-> a=5, b=5
+    a=8;
+     console.log(`a=${a}, b=${b}`);//output-> a=8, b=5 yani b ki value jo suruwat me jo copy rhi wahi rahegi
+
+     let x= {num:5}; //is baar x ki value ko object me daala hai
+     let y = x; //ye bhi object hi hai kyuki ye object ki value ko store kar rha hai
+
+     console.log(`x=${x.num}, y=${y.num}`); //output ->x=5, y=5
+     x.num = 8; // yha x reference hai to ye object ke paas jake value change karega to y reference tha to x ne alredy object ki value ko change kardiye isilye y ko bhi 8 mila
+     console.log(`x=${x.num}, y=${y.num}`); //output ->x=8, y=8
+    //  Nichod -> to yha x object nhi hai x is only the reference to that object and y is  only a reference to same object to mai x ke through jao ya y ke through jao hona change hai usi ke andar yani object me
+
+
+    let p={pop: 'i luv coding'};//p ki value ek memory address hai es object ke liye becoz ye p ek reference hai
+    let q={pop: 'i luv coding'};// ye bhi ek dusra object hai jo memory me kahi aur pada hua hoga
+    console.log(p==q); // p and q diffrent memory address ke hai esiliye ye false derha hai kyuki ye alag - alag address ko point kar rha hai
+    // to jab bhi object equal check kar rhe hai to wo references ko check kar rhe hai hum
+
+    </script>  
+</body>
+</html>

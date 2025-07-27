@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            
+            transition: all 2s ease-in;
+        }
+        .box:hover{
+            transform: rotate(45deg); /*simple rotate likhega to ye zaxis pe rotate karega*/
+            /* transform: rotatex(45deg); ye xaxis pe hi rotate karega */
+            /* transform: rotatey(45deg); ye yaxis pe hi rotate karega */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+</body>
+</html>

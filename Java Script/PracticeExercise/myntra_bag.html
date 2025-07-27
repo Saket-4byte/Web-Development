@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myntra Bag</title>
+  <link rel="stylesheet" href="css/myntra_bag.css">
+</head>
+<body>
+  <button class="bag-button" onclick="cartQuantity+=1;
+  document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Add to bag</button> <!--jab onclick hoga ispe to cartQuantity ki value change hojayegi to isi change ko dikhane ke liye hume text ko bhi change karna padega-->
+
+  <button class="wish-button  " onclick="cartQuantity-=1;
+  document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Move to Wishlist</button>
+
+  <button class="bag-button" onclick="cartQuantity+=2;
+  document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Add 1+1 Sale Items</button>
+
+  <h1 id="cart-summary"></h1>
+
+  <script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`; // humne pahle h1 ko id tag diye kyuki hume usko select karke uske text ko change karni hai aur innertext ka matlab hai h1 ke andar ka koi bhi text ko change kar sakte hai aur ab real time me cartQuantity ki value change hoti chal jayegi
+  </script>
+</body>
+</html>

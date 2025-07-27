@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Q1
+    // function numberCheck(){
+    //   if (num%2===0){
+    //     return 'even';
+    //   }
+    //   else{
+    //     return 'odd';
+    //   }
+    // }
+    // let num =3;
+    // console.log(numberCheck());
+    // M2
+    function isOdd(number){
+      let  rem = number %2;
+      let isOdd = rem ==1;
+      return isOdd;
+    }
+
+    console.log(isOdd(4));
+    console.log(isOdd(5));
+    console.log(isOdd(0));
+    console.log(isOdd(445));
+    // Q2
+    // function largeNum(a,b){
+    //   if (a>b){
+    //     return a;
+    //   }
+    //   else{
+    //     return b;
+    //   }
+    // }
+    // console.log(`The largest number is ${largeNum(6,2)}`);
+    // M2
+    function larger(num1 , num2){
+      return num1>num2?num1:num2; // ternary opeator
+    }
+    console.log(larger(4,5));
+
+    // Q3
+    // function cnvrt(){
+    //   let f = (9/5)*c+32;
+    //   return f;
+    // }
+    // let c = 34;
+    // console.log(`The temperature in farenheit is ${cnvrt(c)}`);
+    // M2
+    function toFarenheit (celsiusValue){
+      return 9/5*celsiusValue + 32;
+    }
+    console.log(toFarenheit(38));
+
+  </script>
+</body>
+</html>

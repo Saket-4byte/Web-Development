@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Truth and Falsy</title>
+</head>
+<body>
+  <script>
+    // let age = 21;
+    // console.log(age);
+    // if(age){
+    //   console.log('You have a valid age');
+    // }
+    // else{
+    //   console.log('Aap avtaar hain');
+    // }
+    // 1st case me humne age ki value ko define kiye isliye if wale chali
+
+    // let age;
+    // console.log(age); //ye output me dega undefined ka matlab jiski value abhi tak define nhi ki gye hai
+    // if(age){
+    //   console.log('You have a valid age');
+    // }
+    // else{
+    //   console.log('Aap avtaar hain');
+    // }
+    // yani iss case me jo bhi falsy value rahegi to humesa else wala chalega
+
+    let age=4/'horse';//ye bhi falsy value hai
+    console.log(age);// ye output dega NaN(yani not a number)
+    if(age){
+      console.log('You have a valid age');
+    }
+    else{
+      console.log('Aap avtaar hain');
+    }
+  </script>
+</body>
+</html>

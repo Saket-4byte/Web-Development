@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // function generateRandomMove(){
+    //   let random = Math.random();
+    //   let randomMove = random*3
+    //   return randomMove; // jha se function ko call wo wha pe jake value ko return kar dega
+    // }
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+
+
+
+    function determineDriveStatus(){
+      const age = prompt("Please enter your age:"); // ye input lene ke liye use hota hai
+      if (age === undefined){
+        return 'Aap Avtaar hain'; 
+      }
+      console.log('Checking Drive Staus');
+      if (age>18){
+        return 'You can drive'; 
+      }
+      else{
+        return 'Use a Bicycle';
+      }
+    }
+
+    console.log(determineDriveStatus());
+
+  </script>
+</body>
+</html>

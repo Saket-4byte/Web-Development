@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative unit:em</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 5px;
+        }
+        #first{
+            height: 100px;
+            width: 200px;
+            font-size: 10px;
+            background-color: red;
+        }
+        #second{
+            height: 60%;/*yani ye aab parent ke height 60% lega */
+            width: 50%;/*yani ye parent ka 50% width lega*/
+            font-size: 0.5rem;/*root (jo universal hai yani sab pe lagta unka particular define nhi hota) ka fontsize 0.5 times hoga */
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    Body Text
+    <div id="first">First div
+        <div id="second">
+            second div
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // function sum(a,b){
+    //   let sum =  a+b ;
+    //   return sum;
+    // }
+
+    // // let num = sum(4,5);
+    // // console.log(num);
+
+    // console.log(sum(4,5));
+    // console.log(sum(41,55));
+    // console.log(sum(0,0));
+    // console.log(sum(1,-1));
+    // console.log(sum(6,9.8));
+
+
+    // function greeting(name){
+    //   console.log(`Namaste ${name} uncle`)
+    // }
+
+    // greeting('Titu') // output->Namaste Titu uncle
+    // greeting(); // output->Namaste undefined uncle ye chiz galat hai ki undefined uncle nhi hosakte hai isiliye hum ek default value use karte hai
+
+  //  default value example
+    function greeting(name = 'Pyaare'){
+      console.log(`Namaste ${name} uncle`)
+    }
+    
+    greeting('Titu') //output->Namaste Titu uncle agar humne naam diye hai to ye assign hoga yani default value use nhi hoge
+
+    greeting(); // isme default value lelega kyuki koi argument paas nhi hua hai
+    // output->Namaste Pyaare uncle
+  </script>
+</body>
+</html>

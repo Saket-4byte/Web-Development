@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q1
+      // let product = {
+      //   name: "Jeans",
+      //   size: "s",
+      //   fit: "Slim Fit",
+      // };
+
+      // // Q2
+      // let CopyProduct = product;
+      // console.log(product);
+      // CopyProduct.size = 'M';
+      // console.log(product);
+      // CopyProduct.fit = 'Regular Fit';
+      // console.log(product);
+      // yani hum change humesa copyProduct me kar rha hu but mai console.log product me kar rha hu just for observing that my original product is change or not?
+      // Ans: Yani hum do product ki copy create nhi ki hai yani humne bas uski reference ki copy create ki hai to mai kisi ko bhi change karu wo humara original product me change hoga
+
+      // Q3
+      //  let product = {
+      //   name: "Jeans",
+      //   size: "s",
+      //   fit: "Slim Fit",
+      //   'delivery-Time': 'Same day delivery', //hyphen(-) lagaye isiliye inverted comma ke andar likha hai
+      // };
+
+      // // delivery time ko access karne ke liye bracket notation use karna padega kyuki hyphen(-) laga hai 
+      // console.log(product['delivery-Time']);
+      // // console.log(product.delivery-Time); mai isko . notation se acess nhi kar paunga kyuki isko samajh me nhi aayega ki delivery me se time minus kar rhe hai
+
+      // Q4
+      // let obj = {
+      //   message:"good job",
+      //   status:"complete"
+      // };
+      // console.log(obj);
+      // // let {} = obj; destructure syntax ,yani bracket ke andar hum wo likhenge jo chiz hume nikalna hai iss obj se
+      // // dono individual variable ko pahle destructure kiye hai uske baad print kiye hai
+      // let {message,status} = obj;
+      // console.log(message);
+      // console.log(status);
+
+      // Q5
+      let product = {
+        name: "Jeans",
+        size: "s",
+        fit: "Slim Fit",
+        'delivery-time': 'same day delivery',
+      };
+      function isIdenticalProduct(product1,product2){ // to check product1 and product2 is equal or not
+
+        // 1st chiz ko industry me hum parameter check bolte hai yani parameter validate karlijiye
+        // 1st chiz hum ye check kar rhae hai ki koi string paas kardiye ho ya integer
+        if(typeof product1 !== 'object' ||  typeof product2 !== 'object') {//1 // yani kisi ne object ke alaba kuch aur paas kar diye ho
+
+          console.warn('Parameter passed was not an object'); // warn matlab warning ke liye
+          return false; // false ka matlab hai ki hum equality check hi nhi karega yani apne jo paas kiye tha wo object hi nhi hai
+        }
+
+        //2nd we have to check , dono references ek hi object ke ho
+        if (product1 == product2){//2
+          return true; //agar ek hi reference hoga to ye true dega
+          // 1st humne validate kiye ki jo chize aaye wo object hai ki nhi
+          //2nd humne check kiye ki dono same object to nhi
+        }
+
+        // to check equals if charo chize exactly same ho product object ke
+        if (product1.name === product2.name && product1.size === product2.size && product1.fit === product2.fit ){  //3 //doesn't require to check delivery time
+        return true;
+      }
+      else{ //4 
+        return false;
+      }
+
+      }
+      let product2 = {
+        name: "Jeans",
+        size: "M",
+        fit: "Slim Fit",
+        'delivery-time': 'same day delivery',
+      };
+      let product3 = { //This is new object but values is same as product2
+        name: "Jeans",
+        size: "M",
+        fit: "Slim Fit",
+        'delivery-time': 'same day delivery',
+      };
+
+      //Now we make Test cases
+      console.log(isIdenticalProduct(product,'')); //ek me product paas kar rha hu aur ek me string
+      //Now the 1st output shows that parameter was passed is not an object warning show kiye aur false dikhaya
+      console.log(isIdenticalProduct(product,product));//dono me hi product ko paas kardu
+      //jab ek hi object paas kiye to 2nd wala if chala isliye true hogya
+      console.log(isIdenticalProduct(product,product2));
+      console.log(isIdenticalProduct(product3,product2));
+      console.log(isIdenticalProduct(product2,product3));
+
+    </script>
+  </body>
+</html>

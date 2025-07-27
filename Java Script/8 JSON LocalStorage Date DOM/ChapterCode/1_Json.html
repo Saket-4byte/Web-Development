@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>>
+  <title>JSON</title>
+</head>
+<body>
+  <script>
+    let product = {
+      name: 'TShirt',
+      price: 789,
+      rating:{ //rating was another object
+        stars: 4.5,
+        noOfReviews: 657,
+      },
+    };
+    console.log(typeof product);
+    console.log(product);//To print original object
+    let str = JSON.stringify(product); //convert product object into string str
+    console.log(typeof str);   
+    console.log(str);   
+  </script>
+</body>
+</html>

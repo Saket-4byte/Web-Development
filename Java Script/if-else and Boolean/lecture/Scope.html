@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scope</title>
+</head>
+<body>
+  <script>
+    // let age = 34;
+    // if (age >18){
+    //   let userMessage = 'You can drive'
+    //   console.log(userMessage);
+
+    // }
+    // else{
+    //   let userMessage = 'Use a bicycle';
+    //   console.log(userMessage);
+
+    // }
+    // yani humne jo if and else ke andar variable create kiye hai wo bas wahi tak simit hai uske baad uss variable ki koi value nhi hogi isliye niche wale me error show kar rha hai
+    // console.log(userMessage);
+
+
+    let age = 34;
+    // yani abb humne bahar define kiye to abb if - else ke bahr bhi chlegi
+    let userMessage;
+    if (age >18){
+      userMessage = 'You can drive'
+      
+    }
+    else{
+      userMessage = 'Use a bicycle';
+    }
+    console.log(userMessage);
+  </script>
+</body>
+</html>

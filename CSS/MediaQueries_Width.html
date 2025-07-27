@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media Queries</title>
+    <style>
+        .box{
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: mediumspringgreen;
+        }
+        /* media queries lagane se hum exact 300px width pe ye brown color ka hojayega es tarike se width effective nhi hota */
+        /* @media screen and (width:300px) {
+            .box{
+                background-color: brown;
+            }
+        } */
+        /* min - width ka matlab hai ki 300px pe ya isse jyada px pe iska color brown hojayega */
+        @media screen and (min-width:300px) {
+            .box{
+                background-color: brown;
+            }
+        }
+        /* jab tak width 300 ke andar me rahega ye yellow color ka hoga */
+        @media screen and (max-width:300px) {
+            .box{
+                background-color: yellow;
+            }
+        }
+        /* 400 se 500px pe apply hoga iss property ko hum combination bhi bolte ha */
+        @media screen and (min-width:400px) and (max-width:500px) {
+            .box{
+                border-radius: 50%;
+                background-color: chocolate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

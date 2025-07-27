@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let product = {
+
+    // }; 
+    // it is the basic syntax of object. it is a empty object with no properties
+    // console.log(product); //output -> {} which shows empty object
+
+    let  product = {
+      Company: 'Mango', // comma ke baad hum dusra properties likhte hai
+      price: 861,
+      // item_name:'T-shirt',
+      'item-name':'T-shirt',//ye variable rule ko follow nhi karta to isse variable banane ke liye double quotes ka use kiye hai
+    };
+    console.log(product);
+    // console.log(product.Company);// agar hume individual chiz ko access karna hai to . lagate hai
+    // console.log(product.price);
+    // console.log(product.item_name);
+    // product.Company = 'Banana' // humlog value bhi change karsakte hai
+    // console.log(product);
+
+
+    // console.log(product['item-name']);//hum iss tarike se bhi access kar sakte hai
+
+    // agar hume bahar se access karna hai tab hum square bracket ka use karte hai
+    // let propertyName = 'item-name';
+    // console.log(product[propertyName]);
+
+
+    delete product.Company; // agar hume object ke andar kisi ko delete karna ho 
+    // or
+    // delete product['Company'];
+    console.log(product);
+
+  </script>
+</body>
+</html>
